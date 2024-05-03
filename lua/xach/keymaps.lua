@@ -22,3 +22,5 @@ km("n", "<leader>e", ":Lex 25<cr>", opts) -- Maps space+e to typing :Lex 25 and 
 km("n", "<S-l>", ":bnext<cr>", opts)
 km("n", "<S-h>", ":bprevious<cr>", opts)
 
+-- Escape to normal mode from insert
+km("i", "<ctrl+[>", "<ESC>", opts)
