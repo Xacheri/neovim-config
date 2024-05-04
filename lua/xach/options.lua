@@ -17,6 +17,7 @@ vim.opt.showtabline = 2
 vim.opt.undofile = true
 vim.opt.expandtab = true
 vim.opt.tabstop = 2
+vim.opt.shiftwidth = 2
 vim.opt.relativenumber = true           -- rel lines ftw
 vim.opt.scrolloff = 4
 vim.opt.sidescrolloff = 0
