@@ -18,7 +18,7 @@ km("", "<Space>", "<Nop>", opts)
 vim.g.mapleader = " "
 vim.g.maplocalleader = " "
 
-km("n", "<leader>e", ":Lex 25<cr>", opts) -- Maps space+e to typing :Lex 25 and pressing enter, macroing the file explorer
+km("n", "<leader>e", ":Lex 18<cr>", opts) -- Maps space+e to typing :Lex 25 and pressing enter, macroing the file explorer
 km("n", "<S-l>", ":bnext<cr>", opts)
 km("n", "<S-h>", ":bprevious<cr>", opts)
 

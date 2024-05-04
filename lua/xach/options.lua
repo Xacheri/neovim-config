@@ -24,3 +24,5 @@ vim.opt.sidescrolloff = 0
 vim.opt.guifont = "monospace:h17"
 vim.opt.smartcase = true
 vim.opt.termguicolors = true
+vim.opt.wrap = true                            -- display lines as one long line, or true to wrap within screen
+vim.opt.linebreak = true                        -- companion to wrap, don't split words
