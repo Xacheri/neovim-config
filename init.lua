@@ -1,3 +1,5 @@
 require "xach.options"
 require "xach.keymaps"
 require "xach.plugins"
+require "xach.colorscheme"
+require "xach.cmp"
