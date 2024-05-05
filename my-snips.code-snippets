@@ -1,0 +1,13 @@
+{
+  "preq": {
+    "prefix": [ "preq" ],
+    "body": [ 
+      "local ${1:thing}_status_ok, ${1:thing} = pcall(require, \"${0:thingpath}\")",
+      "if not ${1:thing}_status_ok then",
+      "  return",
+      "end"
+    ],
+    "description": "pcall lua require",
+    "scope": "lua"
+  }
+}

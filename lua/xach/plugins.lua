@@ -40,9 +40,12 @@ return packer.startup(function(use)
     requires = {
       {
         'nvim-lua/plenary.nvim'
-      } 
+      },
+      {
+        'nvim-tree/nvim-web-devicons'
+      }
     }
-  } 
+  }
   -- color scheme
   use "EdenEast/nightfox.nvim"
   use "bluz71/vim-moonfly-colors"
@@ -54,16 +57,26 @@ return packer.startup(function(use)
   use "hrsh7th/cmp-cmdline"
   use "saadparwaiz1/cmp_luasnip"
   use "hrsh7th/cmp-nvim-lsp"
+  use "hrsh7th/cmp-nvim-lua"
+  use "github/copilot.vim"
 
   -- snippet stuff
   use "L3MON4D3/LuaSnip" -- snippet engine
   use "rafamadriz/friendly-snippets"
-  
-  -- LSP 
-  use "neovim/nvim-lspconfig"
-  use "williamboman/mason.nvim" -- simple to use language server installer
-  use "williamboman/mason-lspconfig.nvim" -- simple to use language server installer
 
+  -- LSP 
+  use "antosha417/nvim-lsp-file-operations"
+  use "neovim/nvim-lspconfig"
+  use "stevearc/dressing.nvim" -- use telescope for many input output things
+  use {
+    'williamboman/mason.nvim',
+  }
+  use { 'williamboman/mason-lspconfig.nvim' }
+
+
+  -- treesitter
+  use { 'nvim-treesitter/nvim-treesitter', run = ':TSUpdate' }
+  use 'p00f/nvim-ts-rainbow'
   if PACKER_BOOTSTRAP then
     require("packer").sync()
   end
