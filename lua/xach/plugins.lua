@@ -76,6 +76,7 @@ return packer.startup(function(use)
     'nvim-lualine/lualine.nvim',
     requires = { 'nvim-tree/nvim-web-devicons', opt = true }
   }
+  use 'prichrd/netrw.nvim'
 
   -- treesitter
   use { 'nvim-treesitter/nvim-treesitter', run = ':TSUpdate' }
