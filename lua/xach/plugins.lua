@@ -72,7 +72,10 @@ return packer.startup(function(use)
     'williamboman/mason.nvim',
   }
   use { 'williamboman/mason-lspconfig.nvim' }
-
+  use {
+    'nvim-lualine/lualine.nvim',
+    requires = { 'nvim-tree/nvim-web-devicons', opt = true }
+  }
 
   -- treesitter
   use { 'nvim-treesitter/nvim-treesitter', run = ':TSUpdate' }
