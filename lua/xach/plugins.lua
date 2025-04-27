@@ -58,7 +58,7 @@ return packer.startup(function(use)
   use "saadparwaiz1/cmp_luasnip"
   use "hrsh7th/cmp-nvim-lsp"
   use "hrsh7th/cmp-nvim-lua"
-  use "github/copilot.vim"
+  -- use "github/copilot.vim" -- eh f copilot
 
   -- snippet stuff
   use "L3MON4D3/LuaSnip" -- snippet engine
